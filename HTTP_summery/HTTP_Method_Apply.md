@@ -30,7 +30,7 @@
 * 조회 조건을 줄여주는 필터, 조회 결과를 정렬하는 정렬 조건에 주로 사용
 * 조회는 GET 사용
 * GET은 쿼리 파라미터 사용해서 데이터를 전달
-* ex) https://www.google.com/search **?q=dev&hlko**
+* ex) https://www.google.com/search **?q=dev&hl=ko**
 
 ##### HTML Form 데이터 전송
 * HTML Form submit 시 POST 전송
