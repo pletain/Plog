@@ -57,3 +57,23 @@
 * GET: 조회, 쿼리 파라미터로 데이터 전달
 * Content-Type: applicatino/json을 주로 사용 (사실상 표준) 
   + TEXT, XML, JSON 등등
+
+<hr />
+
+### HTTP API 설계 예시
+* HTTP API - 컬렉션
+   + **POST 기반** 등록
+   + ex) 회원 관리 API wprhd
+* HTTP API - 스토어
+   + **PUT 기반** 등록
+   + ex) 정적 컨테츠 관리, 원격 파일 관리
+* HTML FORM 사용
+   + 웹 페이지 회원 관리
+   + GET, POST만 지원  
+
+##### 회원 관리 시스템 (API 설계 - POST 기반 등록)
+* 회원 목록 /members -> GET
+* 회원 등록 /members -> POST
+* 회원 조회 /members/{id} -> GET
+* 회원 수정 /members{id} -> PATCH, PUT, POST
+* 회원 삭제 /members{id} -> DELETE
