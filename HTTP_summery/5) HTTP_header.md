@@ -111,7 +111,14 @@
 #### 전송 방식
 * Transfer-Encoding
 * Range, Content-Range
- 
+
+###### 전송 방식 설명
+* 단순 전송
+* 압축 전송
+* 분할 전송
+* 범위 전송
+
+
 
 
 
