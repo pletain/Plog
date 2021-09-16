@@ -154,7 +154,11 @@ User-Agent
 * server: nginx
 * 응답에서 사용 
 
+#### Date (메시지가 발생한 날짜와 시간)
+* Date: Tue, 15, NOV 1994 08:12:31 GMT
+* 응답에서 사용
 
+<hr />
 
 
 
