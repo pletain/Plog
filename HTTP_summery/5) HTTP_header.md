@@ -76,7 +76,7 @@
 * Transfer-Encoding(전송 코딩)을 사용하면 Content-Length를 사용하면 안됨
 <hr />
 
-### 상(콘텐츠 네고시에이션)
+### 협상(콘텐츠 네고시에이션)
 ###### 클라이언트가 선호하는 표현 요청
 * Accept: 클라이언트가 선호하는 미디어 타입 전달
 * Accept-Charset: 클라이언트가 선호하는 문자 인코딩
@@ -84,7 +84,7 @@
 * Accept-Language: 클라이언트가 선호하는 자연 언어
 * 협상 헤더는 요청 시에만 사용
 
-#### 협상과 우선 순위1
+#### 협상과 우선 순위
 ###### Quality Values(q)
 * Quality Values(q) 값 사용
 * 0~1, 클수록 높은 우선 순위
@@ -94,12 +94,23 @@
  + 2. ko;q=0.9
  + 3. en-US;q=0.8
  + 4. en:q=0.7
+<br />
 
-#### 협상과 우선 순위2
-###### Quality Values(q)
 * 구체적인 것이 우선한다.
-* Accept: text/* ,   text/plain
+* Accept: text/&#42; , text/plain, text/plain;format=flowed, &#42;/&#42;
+ 1. text/plain;format=flowed
+ 2. text/plain
+ 3. text/&#42;
+ 4. &#42;/&#42;
 
+* 구제적인 것을 기준으로 미디어 타입을 맞춘다.
+* Accept: text/&#42; ;q=0.3, text/html;1=0.7, text/html;level=1, text/html;level=2;q=0.4, &#42;/;q=0.5
+
+<hr />
+
+#### 전송 방식
+* Transfer-Encoding
+* Range, Content-Range
  
 
 
